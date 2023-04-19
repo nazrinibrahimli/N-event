@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 
@@ -26,7 +30,7 @@ body{
     
 }
 
-/* section{
+.anime{
     text-align: center;
     font-size: 30px;
     margin: 10rem 10rem ;
@@ -35,16 +39,16 @@ body{
     border-radius: 9px;
     padding: 2rem;
 
-} */
+}
 
-/* .hidden{
+.hidden{
     opacity: 0;
     transition: all 2.5s;
     filter: blur(5px);
     transform: translateX(-100%);
 
 }
- */
+
 
 .show{
     opacity: 1;
