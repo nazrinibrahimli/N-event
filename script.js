@@ -41,3 +41,50 @@ function checkTime(i) {
   }
   startTime();
 
+function functionNav(){
+  var x= document.getElementById("navBar");
+  if(x.className==="myNav"){
+    x.className+=" responsive";
+  }
+  else{
+    x.className= "myNav"
+  }
+}
+
+
+
+/* Calendar* */
+const louvre = new Date("2023-07-25");
+var hh=louvre.getFullYear
+
+
+
+var arrayOfEvents = [
+
+  {
+      "date": "12.05",
+      "title": "",
+      "time": "11:00"
+  },
+  {
+    "date": "12.05",
+    "title": "",
+    "time": "11:00"
+  },
+  {
+    "date": "12.05",
+    "title": "",
+    "time": "11:00"
+  },
+  {
+    "date": "12.05",
+    "title": "",
+    "time": "11:00"
+  }
+
+];
+
+var app = document.querySelector('#dates');
+app.innerHTML = '<ul>' + arrayOfEvents.map(function (wizard) {
+	return '<li>' + wizard + '</li>';
+}).join('') + '</ul>';

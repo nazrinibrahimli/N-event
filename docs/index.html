@@ -6,41 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevnty</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-white dark:bg-black">
 
     <header class="w-full">
-        <nav class=" w-full bg-white z-50 fixed flex justify-between py-4 px-[4rem] border-b-2 border-gray-600 items-center py-4">
+        <nav id="" class="overflow-hidden  w-full bg-white z-50 fixed flex justify-between py-4 px-[2rem] lg:px-[4rem] border-b-2 border-gray-600 items-center py-4">
+ 
+            <!-- <a href="javascript:void(0);" class="icon" onclick="functionNav()">
+                <i class="fa fa-bars"></i>
+            </a> -->
+
             <ul class="flex">
-                <li class="mx-2"><a class="text-xl" href="#home">Home</a></li>
-                <li class="mx-2"><a class="text-xl" href="#event">Event</a> </li>
-                <li class="mx-2"><a class="text-xl" href="#schedule">Schedule</a></li>
+                <li class="mx-2"><a class="text-base lg:text-xl" href="#home">Home</a></li>
+                <li class="mx-2"><a class="text-base lg:text-xl" href="#event">Event</a> </li>
+                <!-- <li class="mx-2"><a class="text-xl" href="#schedule">Schedule</a></li> -->
             </ul>
-            <h1 class="text-2xl font-medium ">
-                <span  class="italic font-bold pr-[0.2] text-4xl">N</span>Evnty
-            </h1>
+            <a class="text-base lg:text-2xl font-medium" href="#home"><span  class="italic font-bold pr-[0.2] text-xl lg:text-4xl">N</span>Evnty
+            </a>
+        
+
             <ul class="flex justify-between">
-                <li class="mx-2"> <a href="#ticket" class="text-xl">Ticket</a> </li>
-                <li class="mx-2"> <a href="#subscribe" class="text-xl underline">Subscribe</a> </li>
+                <li class="mx-2"> <a href="#ticket" class="text-base lg:text-xl">Ticket</a> </li>
+                <li class="mx-2"> <a href="#subscribe" class="text-base lg:text-xl underline">Subscribe</a> </li>
             </ul>
         </nav>
     </header>
  
     <section class="px-[2rem] lg:px-[4rem] bg-white pt-[4rem] lg:py-[7rem] h-[53rem] md:h-[50rem]" id="home">
-<!-- 
-        <section class="hidden bg-white anime">
-            <h1>Hey Girl!</h1>
-            <p>This is my website</p>
-        </section>
-    
-    
-        <section class="hidden bg-white anime">
-            <h1>Take me to Amsterdam, Girl!</h1>
-            <p>This is my website</p>
-        </section> -->
-    
-    
+
+
 
 
 <!-- 
@@ -96,7 +92,7 @@
                     </div>
 
 
-
+           
 
 
 
@@ -118,7 +114,8 @@
 
 
     <section class="px-[2rem] lg:px-[4rem] bg-[#1d2132]" id="event">
-        <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-white pt-[4rem]">Decide To <strong>Join</strong>  the Event.</h1>
+   
+        <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-white pt-[4rem]">Decide To Join the Event.</h1>
         <p class=" my-[2rem] text-gray-300 leading-tight text-xl">
             We love what we do. Check our departments. We lead the industry in the fields below.We do it all – from event management to audio visual support, from personnel to event logistics, from entertainment to decoration, from creative to set design and themed events.
         </p>
@@ -132,19 +129,19 @@
                     <p  class="text-sm text-gray-500 text-center"> &nbsp;hours&nbsp;&nbsp;&nbsp;minute&nbsp;&nbsp; second</p>
                 </div>
             </div>
-            <div class="z-10 absolute backgroundAnimation w-full h-[35rem] bg-[url('./images/consert-4.jpg')] bg-cover bg-no-repeat grayscale">
+            <div class="z-10 absolute backgroundAnimation w-full h-[35rem] bg-[url('../images/consert-4.jpg')] bg-cover bg-no-repeat grayscale">
             </div>
         </div>
 
     </section>
 
-    <section class="px-[2rem] lg:px-[4rem] bg-white " id="schedule">
+    <section class="px-[2rem] lg:px-[4rem] bg-white  py-[3rem]" id="schedule">
             <div class="flex justify-between mb-[2rem] pt-[4rem] flex-wrap">
                     <div class="flex mr-[5rem]">
                         <h4 class="text-2xl font-light pt-[0.3rem] h-[3rem] border-b-[0.1rem] border-black"> Detail Custing</h4>
                     </div>
                     <div class="flex-1 flex-row-reverse">
-                        <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-[#1d2132] leading-normal">We Have Put <strong>Together</strong>  a <strong>Special</strong>   Combination of Strategy. </h1>
+                        <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-[#1d2132] leading-normal">We Have Put Together a <strong>Special Combination</strong> of Strategy. </h1>
                        <div class="flex flex-wrap items-center">
                         <p class="w-[20rem] mt-[2rem] text-gray-500 leading-relaxed flex-1 mr-[1rem] text-xl">
                             All our service units complete each other in order to provide our clients a true One Stop Shop experience in events and organizational support industry in Azerbaijan
@@ -160,15 +157,15 @@
       
     </section>
 
-    <section class="px-[4rem] flex  justify-center bg-[#e7eaed] py-[4rem] flex-wrap ">
+    <section class="px-[4rem] flex  justify-center bg-[#e7eaed] py-[6rem] flex-wrap ">
         <div class="flex pl-[4rem] mb-[1rem]">
-            <div  class="h-[20rem] w-[15rem] bg-[url('./images/musician.jpeg')]  z-30  bg-contain   hover:bg-[url('./images/artist.jpg')] ">
+            <div  class="h-[20rem] w-[15rem] bg-[url('../images/musician.jpeg')]  z-30  bg-contain   hover:bg-[url('./images/artist.jpg')] ">
             </div>
             <div  class="h-[20rem] w-[14rem] bg-gradient-to-b from-gray-300 to-[#e7eaed] absolute left-[5rem] -rotate-[12deg]  z-20 bg-cover"></div>
 
         </div>
         <div class="flex-1 px-[4rem]">
-            <h3 class=" text-2xl md:text-5xl lg:text-7xl font-semibold text-[#1d2132] leading-normal">Meet Our <strong>Artist.</strong></h3>
+            <h3 class=" text-2xl md:text-5xl lg:text-7xl font-semibold text-[#1d2132] leading-normal">Meet Our Artist.</h3>
             <p class="text-[#1d2132] font-medium pt-[1rem] text-xl" >Alex Turner</p>
             <p class="text-gray-500 pl-3 mt-3 border-l-[0.1rem] border-gray-500 text-xl">He is well known as the frontman and principal songwriter of the rock band Arctic Monkeys, with whom he has released seven albums. He has also recorded with his side project involving Miles Kane, as the Last Shadow Puppets and also as a solo artist.</p>
             <p class="text-gray-500 pl-1 mt-2 text-[0.8rem]">#OnceUponAtime Tour on December 5th</p>
@@ -176,9 +173,9 @@
         </div>
     </section>
 
-    <section class="px-[2rem] lg:px-[4rem]  bg-[#e7eaed] py-[4rem]">
-        <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-[#1d2132] leading-normal">We Are Aware of <strong>Your Opinions</strong>.</h1>
-        <details class=" pt-[2rem] pb-[1rem] border-b-[0.1rem] border-gray-500">
+    <section class="px-[2rem] lg:px-[4rem]  bg-[#e7eaed] py-[6rem]">
+        <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-[#1d2132] leading-normal">We Are Aware of Your Opinions.</h1>
+        <details class=" pt-[3rem] pb-[1rem] border-b-[0.1rem] border-gray-500">
             <summary class="list-none capitalize text-[#1d2132] text-base text-xl font-medium">Who To join?</summary>
             <p class="text-gray-500 pt-[1rem]">"Join Our Concert" is a music variety show performed by native friends, dedicated to singing and performing the excellent musical works of the Chinese orchestra while expressing the musical memories of the times and the friendship story between friends.</p>
         </details>
@@ -198,7 +195,7 @@
 
 
 
-    <section class="bg-[#1d2132] px-[4rem] bg-[url('./images/consert-1.jpg')] bg-cover pb-[1rem]" id="ticket">
+    <section class="bg-[#1d2132] px-[4rem] bg-[url('../images/consert-1.jpg')] bg-cover pb-[3rem]" id="ticket">
         <h1 class="text-2xl md:text-5xl lg:text-7xl font-semibold text-white pt-[4rem] text-center capitalize">Get your first ticket.</h1>
         <p class="my-[2rem] leading-tight text-white text-center text-xl">We combine the right teams with the best skills and services to deliver all the integrated elements to exacting standards from concept and ideation, to promotion management, activation and evaluation</p>
         <button class="flex justify-between items-center mb-[4rem] mt-[2rem] mx-auto w-[11rem] h-[3.5rem] text-[#1d2132] bg-white border-[#1d2132] border-2 rounded-full pl-[1.3rem]">See More <span class="mx-2 bg-[#1d2132] w-[2.7rem] h-[2.7rem] text-white flex items-center justify-center rounded-full text-2xl"><p> →</p></span></button>
@@ -207,22 +204,10 @@
  
 
 
-    <!-- <section class="imagesSection">
-        <h1>Team meeting!!</h1>
-        <div class="images">
-            <div class="logo hidden">
-                <img src="/images/client-1.jpg">
-            </div>
-            <div class="logo hidden">
-                <img src="/images/client.jpg">
-            </div>
-            <div class="logo hidden">
-                <img src="/images/client.jpg">
-            </div>
-            <div class="logo hidden">
-                <img src="/images/client.jpg">
-           </div>
-    </section> -->
+
+
+
+
 
     <footer class="px-[2rem] lg:px-[4rem]  bg-[#1d2132] py-[3rem]" id="subscribe">
         <div class="flex justify-between py-[1.5rem] flex-wrap">
@@ -254,7 +239,7 @@
     </footer> 
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 </html>

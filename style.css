@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -33,17 +35,67 @@ body{
 .anime{
     text-align: center;
     font-size: 30px;
-    margin: 10rem 10rem ;
-    background-color:white;
-    height: 24rem;
+    height: 8rem;
     border-radius: 9px;
     padding: 2rem;
+    width: 35rem;
+    margin: 5rem auto;
+    
+}
+
+.images{
+    display: inline-block;
+    
+}
+
+.images>div{
+    width: 40rem;
+    height: 14rem;
+    margin: 4rem auto;
+}
+
+.logo>img{
+    width: 40rem;
+}
+
+.louvre{
+    background-image: url('./images/louvre2.webp');
+    background-size: cover;
+
 
 }
 
+.garnier{
+    background-image: url('./images/operaGarnier.jpeg');
+    background-size: cover;
+
+
+}
+
+.theatre{
+    background-image: url('./images/theatre.webp');
+    background-size: cover;
+    
+
+}
+
+.confrence{
+    background-image: url('./images/confrence.jpeg');
+    background-size: cover;
+
+}
+
+.speaker{
+    background-image: url('./images/speaker.jpeg');
+    background-size: contain;
+
+}
+
+
+
 .hidden{
     opacity: 0;
-    transition: all 2.5s;
+    transition: all 2s;
     filter: blur(5px);
     transform: translateX(-100%);
 
@@ -64,9 +116,7 @@ img{
     border-radius: 5px;
 }
 
-.images{
-    display: flex;
-}
+
 
 .logo:nth-child(2){
     transition-delay: 200ms;
@@ -80,6 +130,31 @@ img{
     transition-delay: 600ms;
 }
 
-.imagesSection{
-    background-color: black;
-}
+
+
+.myNav .icon {
+    display: none;
+  }
+
+/*responsive navbar*/
+@media screen and (max-width: 600px) {
+    .myNav a:not(:first-child) {display: none;}
+    .myNav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .myNav.responsive {position: relative;}
+    .myNav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .myNav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
